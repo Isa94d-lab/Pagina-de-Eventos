@@ -1,0 +1,138 @@
+/* A partir de ACA este codigo permite el estilo de la campanita */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 20px;
+}
+.conteiner1 {
+    margin: 25px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+  
+  .icon-button:hover {
+    cursor: pointer;
+  }
+  
+  .icon-button:active {
+    background: #cccccc;
+  }
+  
+  .icon-button__badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  /* Primer TITULO */
+
+  h1 {
+    font-size: 70px;
+  }
+  .titulo {
+    color: #761cbc;
+    margin: 0;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+  @media (max-width: 600px) {
+    h1 {
+        color: rgb(0, 0, 0);
+        font-size: 30px !important;
+
+    }
+  }
+  /* Ahora la barra de busqueda */
+
+  .search-box {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .search-box input {
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+  }
+
+  .search-box button img {
+    width: 25px;
+  }
+
+  .search-box button {
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  /* Apartir de aca, se crea la barra para los tipos de eventos */
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    overflow-x: scroll;
+  }
+  .carousel-item {
+    flex: 1;
+    flex-grow: 1;
+    min-width: 30%;
+    background-color: purple;
+    margin: 0 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
