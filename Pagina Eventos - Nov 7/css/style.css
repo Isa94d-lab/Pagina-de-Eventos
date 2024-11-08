@@ -2,6 +2,7 @@
 body {
     font-family: "Inter", sans-serif;
     margin: 20px;
+    text-decoration: none;
 }
 .conteiner1 {
     margin: 25px;
@@ -57,11 +58,11 @@ body {
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
-
+  /* Lo que esta dentro del media, sera lo que sucedera cuando la pantalla este a menos de 600px*/
   @media (max-width: 600px) {
     h1 {
         color: rgb(0, 0, 0);
-        font-size: 30px !important;
+        font-size: 30px ;
 
     }
   }
@@ -106,10 +107,75 @@ body {
   .carousel {
     display: flex;
     flex-direction: row;
+    height: 80px;
+    overflow-x: scroll;
+  }
+  .carousel-item{
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    min-width: 30%;
+    background-color: #B8F297;
+    margin: 0 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .item1 {
+    background-color: #F2D597;
+  }
+  .item2{
+    background-color: #97F2E1;
+  }
+
+  .item3{
+    background-color: #F297C5;
+  }
+  
+
+  @media (max-width: 600px){
+    .carousel {
+      height: 40px;
+    }
+    
+    .titulo2{
+      font-size: 20px
+    }
+    .titulo3{
+      font-size: 20px;
+    }
+  }
+
+  /* Ahora en el siguiente contenedor mostraremos los Trending events */
+
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+
+  .second {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+
+  .carousel2 {
+    display: flex;
+    flex-direction: row;
     height: 200px;
     overflow-x: scroll;
   }
-  .carousel-item {
+    
+  .carousel2-item {
     flex: 1;
     flex-grow: 1;
     min-width: 30%;
@@ -117,6 +183,9 @@ body {
     margin: 0 5px;
   }
 
+  .item
+
+  
 
 
 
