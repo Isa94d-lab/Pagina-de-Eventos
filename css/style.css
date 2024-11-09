@@ -31,6 +31,7 @@ body {
   
   .icon-button:active {
     background: #cccccc;
+
   }
   
   .icon-button__badge {
@@ -45,7 +46,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    text-decoration: none
   }
+  /* Hasta AQUI */
 
   /* Primer TITULO */
 
@@ -109,8 +112,9 @@ body {
     flex-direction: row;
     height: 80px;
     overflow-x: scroll;
+    text-decoration: none;
   }
-  .carousel-item{
+  .carousel-item {
     text-decoration: none;
     display: flex;
     flex: 1;
@@ -122,6 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+
   }
 
   .item1 {
@@ -149,7 +154,7 @@ body {
     }
   }
 
-  /* Ahora en el siguiente contenedor mostraremos los Trending events */
+  /* Ahora en el siguiente contenedor mostraremos los titulos superiores */
 
   h2 {
     font-size: 40px;
@@ -157,6 +162,8 @@ body {
   h3 {
     font-size: 40px;
   }
+
+  /* Ahora las imagenes */
 
   .second {
     width: 100%;
@@ -179,29 +186,7 @@ body {
     flex: 1;
     flex-grow: 1;
     min-width: 30%;
-    background-color: purple;
+    background-image: url(../image/Concierto.jpeg);
+    background-size: cover;
     margin: 0 5px;
   }
-
-  .item
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
