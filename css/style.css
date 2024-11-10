@@ -1,17 +1,39 @@
-/* A partir de ACA este codigo permite el estilo de la campanita */
 body {
     font-family: "Inter", sans-serif;
     margin: 20px;
     text-decoration: none;
 }
+
+/* A partir de ACA este codigo permite el estilo de la campanita */
+
 .conteiner1 {
-    margin: 25px;
+    margin: 15px;
     padding-top: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
+  .icon-second {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+    max-width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+
+  .icon-second img {
+    width: 24px;
+    height: 24px;
   }
   
-  .icon-button {
+  .icon-button {  
     position: relative;
     display: flex;
     align-items: center;
@@ -23,6 +45,7 @@ body {
     border: none;
     outline: none;
     border-radius: 50%;
+    margin-right: 10px;
   }
   
   .icon-button:hover {
@@ -48,6 +71,8 @@ body {
     border-radius: 50%;
     text-decoration: none
   }
+
+
   /* Hasta AQUI */
 
   /* Primer TITULO */
@@ -129,6 +154,11 @@ body {
 
   }
 
+  .carousel-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .item1 {
     background-color: #F2D597;
   }
@@ -139,8 +169,9 @@ body {
   .item3{
     background-color: #F297C5;
   }
-  
 
+
+  /* Mediaaaa */
   @media (max-width: 600px){
     .carousel {
       height: 40px;
@@ -163,7 +194,7 @@ body {
     font-size: 40px;
   }
 
-  /* Ahora las imagenes */
+  /* Ahora los titulos que esatan arriba de los elementos */
 
   .second {
     width: 100%;
@@ -174,19 +205,81 @@ body {
     overflow: hidden;
   }
 
+   /* Ahora las imagenes de los eventos y su contenido */
 
   .carousel2 {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 100%;
+    width: 100%;
     overflow-x: scroll;
   }
     
   .carousel2-item {
-    flex: 1;
-    flex-grow: 1;
-    min-width: 30%;
+    display: flex;
+    height: 500px;
+    width: 1000px;
     background-image: url(../image/Concierto.jpeg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0 5px;
+    border-radius: 15px;
+    /* Esto permitira que las imagenes se muestren todo su contenido y no se junten para salir todas en la
+    pagina al mismo tiempo */
+    flex-shrink: 0;
+
+    justify-content: center;
   }
+
+  /* Cuadrado dentro de la imagen del carrusel */
+
+  .cuadrado {
+    width: 960px;
+    height: 230px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    /* Efecto de desenfoque */
+    backdrop-filter: blur(10px);
+    margin-top: 265px;
+    border-radius: 15px;
+
+  }
+
+  /* Cuando esta en la pantalla del celular */
+  
+  @media  (max-width: 600px){
+
+    .carousel2 {
+      display: flex;
+      flex-direction: row;
+      height: 200px;
+      overflow-x: scroll;
+    }
+    
+    .carousel2-item {
+      flex: 1;
+      flex-grow: 1;
+      height: 186px;
+      width: 346px;
+      background-image: url(../image/Concierto.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 5px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .cuadrado {
+      width: 50px;
+      height: 200px;
+      background-color: gray;
+      margin-top: 70px;
+  
+    }
+  }
+
+
+
+
+  
