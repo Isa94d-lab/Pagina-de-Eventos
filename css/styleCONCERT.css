@@ -1,0 +1,12 @@
+.conteiner1{
+    width: 100vw;
+    max-height: 300px;
+    background-image: url(../image/ConciertoMalu.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+.conteiner2 {
+    background-color: white;
+}

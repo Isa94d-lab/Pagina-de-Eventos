@@ -334,6 +334,8 @@ body {
 
     padding-top: 10px;
     padding-bottom: 10px;
+
+    text-decoration: none;
   }
   /* Propiedades para el texto */
 
@@ -521,4 +523,10 @@ body {
 }
 .space3 {
   padding-right: 10px;
+}
+
+/**/
+.carousel2-item a {
+  text-decoration: none;
+  color: inherit;
 }
