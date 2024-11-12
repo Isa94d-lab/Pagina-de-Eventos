@@ -1,12 +1,62 @@
-.conteiner1{
-    width: 100vw;
-    max-height: 300px;
-    background-image: url(../image/ConciertoMalu.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+  font-family: "Inter", sans-serif;
+}
 
-  }
+/* QUitar margen y pading por motivos esteticos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Dimenciones de la imagen del evento */
+.imga img{
+  width: 100vw;
+  height: 90vh;
+  position: static;
+}
+
+/* Centrar el contenido */
 .conteiner2 {
-    background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.cuadrado {
+  width: 1850px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+
+  margin-top: -200px;
+}
+
+.info1-2 img {
+  width: 40px;
+  height: 40px;
+}
+
+.info1-2 {
+  display: flex;
+  align-items: center;                                
+}
+
+.infoo {
+  font-size: 40px;
+}
+
+.info1 {
+  font-size: 50px;
+}
+
+.info2-2{
+  font-size: 50px;
+}
+
+@media (max-width: 600px){
+  .img{
+    width: 100vw;
+    height: 75vh;
+  }
 }
