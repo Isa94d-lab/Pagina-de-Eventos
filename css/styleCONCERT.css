@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
   font-family: "Inter", sans-serif;
 }
 
 /* QUitar margen y pading por motivos esteticos */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*                      IMAGEN DEL EVENTO QUE SE ENCUENTRA DE FONDO            */
 /* Dimenciones de la imagen del evento */
-.imga img{
+.imga img {
   width: 100vw;
   height: 90vh;
   position: static;
@@ -24,17 +26,23 @@ body {
 
   align-items: center;
 }
+/*          HASTA AQUI     */
 
+/*          CUADRADO QUE SE ENCUENTRA ENCIMA DE LA IMAGEN ANTERIOR */
 .cuadrado {
   width: 1850px;
   height: 300px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   margin-top: -200px;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
+  box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
 
   display: flex;
+  /* Para que los elementos se ubiquen de manera vertical */
   flex-direction: column;
-  justify-content: center;
+
 }
 
 .info1-2 img {
@@ -44,7 +52,7 @@ body {
 
 .info1-2 {
   display: flex;
-  align-items: center;                                
+  align-items: center;
 }
 
 .infoo {
@@ -59,15 +67,135 @@ body {
 
 .info1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
-.info2-2{
+.info2-2 {
   font-size: 50px;
 }
 
-@media (max-width: 600px){
-  .imga img{
+.info2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #761cbc;
+}
+
+.par {
+  display: flex;
+  flex-direction: row;
+}
+
+.dentrocuadrado {
+  margin-top: 10px;
+}
+
+.imagen-conteiner2{
+  padding-left: 20px;
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.people img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  padding-left: -15px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .imga img {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
+  }
+
+  .cuadrado {
+    width: 400px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: -100px;
+  }
+
+  .info1-2 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info1 {
+    font-size: 15px;
+  }
+
+  .info2-2 {
+    font-size: 15px;
+
+  }
+
+  .infoo {
+    font-size: 20px;
+    margin: 3px;
+    padding-left: 20px;
+  }
+
+  .info2 {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .people img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+}
+
+/*       DESCRIPCION DEL EVENTO SELECCIONADO          */
+
+.conteiner3 {
+  margin: 20px;
+}
+
+.title-descrip {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.textt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Número de líneas visibles inicialmente */
+    overflow: hidden;
+    color: #706D6D;
+}
+
+.textt.expanded {
+    -webkit-line-clamp: unset; /* Muestra todo el texto */
+}
+
+.read-more-btn {
+    background-color: transparent;
+    
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+  .title-descrip {
+    font-size: 20px;
   }
 }
