@@ -1,7 +1,7 @@
 # Pagina-de-Eventos
 
 ## Descripcion 📌
-_En este proyecto se mostrara una intefaz en la que se presentaran distintos eventos, dependiendo cual seleccione el usuario, se le mostrara: 
+En este proyecto se mostrara una intefaz en la que se presentaran distintos eventos, dependiendo cual seleccione el usuario, se le mostrara: 
 PRIMERO. La informacion basica del evento (su ubicacion, horario, precio por entrada etc.) 
 SEGUNDO. Si el usuario decide "Buy Tickets", se le mostrara su respectivo ticket segun el evento seleccionado 
 
