@@ -182,7 +182,8 @@ body {
 }
 
 .textt.expanded {
-    -webkit-line-clamp: unset; /* Muestra todo el texto */
+  /* Con esto se miestra todo el texto */
+    -webkit-line-clamp: unset; 
 }
 
 .read-more-btn {
