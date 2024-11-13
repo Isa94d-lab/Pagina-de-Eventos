@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleTICKET.css">
-    <title>TICKET CONCIERTO</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <title>TICKET TEATRO</title>
 </head>
 <body>
     <div class="conteiner1">
-        <a href="concierto.html" class="btn"> < </a>
+        <a href="teatro.html" class="btn"> < </a>
     </div>
 
     <div class="conteiner2">
         <div class="ticket">
-            <img src="/image/imagen.svg">
+            <div class="imagenn"><img src="/image/imagen.svg"></div>
             <div class="into-ticket">
-            <div class="imagen-event"><img src="/image/TicketConciertoMalu.jpeg" ></div>
-            <div class="title1">MALUMA +PRETTY +DIRTY</div>
-            <div class="title2">Marzo 15 2025 ~ Palau Sant Jordi, Barcelona</div>
+            <div class="imagen-event"><img src="/image/Teatro.jpg" ></div>
+            <div class="title1">Orquesta Sinfónica Nacional de Colombia</div>
+            <div class="title2">Diciembre 14 2024 ~ Teatro Mayor Julio Mario Santo Domingo, Bogota</div>
             <table>
                 <tr>
             
@@ -30,35 +31,39 @@
                     </div>
                     <td>
                         <div class="text1">Order Number</div>
-                        <div class="text2">LOL08324JH</div>
+                        <div class="text2">JUS07210LM</div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
                         <div class="text1">Date</div>
-                        <div class="text2">Marzo 15 2025</div>
+                        <div class="text2">Diciembre 14 2024</div>
                     </td>
                     <td>
                         <div class="text1">Time</div>
-                        <div class="text2">9:00PM</div>
+                        <div class="text2">5:00PM</div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
                         <div class="text1">Gate</div>
-                        <div class="text2">Yellow</div>
+                        <div class="text2">GOLD</div>
                     </td>
                     <td>
                         <div class="text1">Seat</div>
-                        <div class="text2">West B</div>
+                        <div class="text2">West C</div>
                     </td>
 
                 </tr>
-
-
             </table>
+            <div class="codigoDeBarras">
+                <img id="codigo">
+                <script>
+                    JsBarcode("#codigo", "123456");
+                </script>
+            </div>
             </div>
         </div>
     </div>

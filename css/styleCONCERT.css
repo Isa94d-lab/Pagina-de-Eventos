@@ -28,13 +28,14 @@ body {
 }
 /*          HASTA AQUI     */
 
-/*          CUADRADO QUE SE ENCUENTRA ENCIMA DE LA IMAGEN ANTERIOR */
+/*          CUADRADO QUE SE ENCUENTRA ENCIMA DE LA IMAGEN ANTERIOR    */
 .cuadrado {
   width: 1850px;
   height: 350px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   margin-top: -200px;
+  /* Sombra que se le aplica al elemento */
   -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
   -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
   box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.18);
@@ -85,6 +86,7 @@ body {
   flex-direction: row;
 }
 
+/* Aquek que guardara la informacion basica del evento */
 .dentrocuadrado {
   margin-top: 10px;
 }
@@ -96,6 +98,8 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
+
+/* Proiedades de la imagenes pequeñas que aparecen */
 .people img{
   width: 50px;
   height: 50px;
@@ -111,9 +115,10 @@ body {
   font-size: 50px;
 }
 
+/* Propiedades para cuando se use la pantalla del celular */
 @media (max-width: 600px) {
   .imga img {
-    width: 100vw;
+    width: 100%;
     height: 30vh;
   }
 
@@ -173,9 +178,12 @@ body {
 }
 
 .textt {
+  /* Esto nos permitira hacer uso del read more, */
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Número de líneas visibles inicialmente */
+    /* EStas son las lineas de texto que se mostraran antes del Read more*/
+    -webkit-line-clamp: 3;
+    /* Para que no se desborde */ 
     overflow: hidden;
     color: #706D6D;
     font-size: 30px;
@@ -185,7 +193,7 @@ body {
   /* Con esto se miestra todo el texto */
     -webkit-line-clamp: unset; 
 }
-
+/* Propiedades del "read more "*/
 .read-more-btn {
     color: white;
     border: none;
@@ -201,6 +209,7 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Para cuando este encima del read more */
 .read-more-btn:hover {
   transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0, 1)
@@ -233,7 +242,7 @@ body {
   margin: 18px;
 }
 
-.ubication1 img {
+.ubication1 .img {
   width: 420px;
   height: 300px;
   border-radius: 15px;
@@ -246,7 +255,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   bottom: 0;
   padding: 0px 10px;
