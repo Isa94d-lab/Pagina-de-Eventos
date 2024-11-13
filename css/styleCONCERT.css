@@ -31,7 +31,7 @@ body {
 /*          CUADRADO QUE SE ENCUENTRA ENCIMA DE LA IMAGEN ANTERIOR */
 .cuadrado {
   width: 1850px;
-  height: 300px;
+  height: 350px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   margin-top: -200px;
@@ -167,7 +167,7 @@ body {
   margin: 18px;
 }
 
-.title-descrip {
+.title-description {
   font-size: 50px;
   font-weight: 600;
 }
@@ -178,6 +178,7 @@ body {
     -webkit-line-clamp: 3; /* Número de líneas visibles inicialmente */
     overflow: hidden;
     color: #706D6D;
+    font-size: 30px;
 }
 
 .textt.expanded {
@@ -213,6 +214,16 @@ body {
     font-size: 30px;
     font-weight: 600;
   }
+
+  .textt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* El nuemro de lineas visibles antes del "read more"*/
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #706D6D;
+    font-size: 20px;
+}
 }
 
 /* UBICACION DEL EVENTO SELECIONADO */
@@ -227,7 +238,7 @@ body {
   border-radius: 15px;
 }
 
-/* BARRA DE COMPRA */
+/*          BARRA DE COMPRA              */
 
 .cuadradoo {
   position: fixed;
@@ -248,5 +259,40 @@ body {
 
 .into-into-cuadradoo1 {
   padding-right: 200px;
+}
+
+.text1-into-cuadradoo { 
+  font-size: 15px;
+}
+
+.text2-into-cuadradoo {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/*        BOTON PARA IR AL TICKET          */
+
+.text3-into-cuadradoo {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #761cbc;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text3-into-cuadradoo:hover {
+  transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0, 1)
+}
+
+.text3-into-cuadradoo:active{
+  transform: translateY(0);
+}
+
+.text3-into-cuadradoo a {
+  text-decoration: none;
+  color: white;
 }
 
