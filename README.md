@@ -32,6 +32,16 @@ Al momento de renderizar el codigo HTML desde el archivo "index.html" se mostrar
 3. **Ticket con codigo de barras**
 4. **Boton de retorno**
 
+1. Prerrequisitos
+- Git: Necesitaras Git para clonar el repositorio. Descargalo desde [git](https://git-scm.com/) 
+- Un editor de texto como VSCode o cualquier otro de tu preferencia 
+  
+2. Codigos en la terminal para instalar el proyecto
+- git clone https://github.com/Isa94d-lab/Pagina-de-Eventos.git
+- cd Pagina-de-Eventos
+
+3. Ejecutar el codigo desde el archivo *"index.html"*
+
 ## Licencia 📜
 Este proyecto esta bajo la Licencia MIT. Para mas detalles [LICENSE](LICENSE) 
    
